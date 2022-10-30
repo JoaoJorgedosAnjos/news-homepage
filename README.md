@@ -5,7 +5,7 @@ Projeto do Frontend Mentor. O desafio consiste em construir um website homepage 
 
 # Tecnologias utilizadas
 - HTML
-- CSS
+- CSSs
 
 # O que aprendi no projeto
 - Melhorar minhas habilidades com flex e grid
