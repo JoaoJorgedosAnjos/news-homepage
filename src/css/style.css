@@ -1,0 +1,210 @@
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "header header"
+        "secao-principal aside"
+        "footer footer";
+    width: 111rem;
+    height: 600px;
+    margin-top: 50px;
+
+}
+
+.container .cabecalho {
+    grid-area: header;
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container .cabecalho .menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 42.5px;
+    margin-top: 10px;
+}
+
+.container .cabecalho .menu a {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-weight: 400;
+    transition: 0.3s ease-in-out;
+
+}
+
+.container .secao-principal{
+    grid-area: secao-principal;
+    height: 55rem;
+    width: 76rem;
+}
+
+.container .aside {
+    grid-area: aside;
+    width: 35rem;
+    height: 55rem;
+
+}
+
+.container .footer {
+    grid-area: footer;
+    margin-top: 3.4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+
+}
+.container .menu a{
+    color: var(--text-principal-color);
+    transition: 0.3s ease-in-out ;
+}
+.container .menu a:hover {
+    color: var(--new-color);
+}
+
+.container .cor-texto-principal {
+    color: var(--text-principal-color);
+}
+
+.container .imagem-principal{
+    width: 73rem;
+    height: 30rem;
+}
+.container .picture{
+    width: 30px;
+    height: 30px;
+}
+
+.secao-principal .info {
+    display: flex;
+    width: 73rem;
+    height: 250px;
+}
+
+.secao-principal .titulo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.secao-principal .titulo h1 {
+    font-weight: 700;
+    font-size: 5.5rem;
+    line-height: 5.6rem;
+    letter-spacing: 1px;
+    margin-top: -20px;
+}
+
+.secao-principal .infos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 0 0px 15px;
+}
+
+.secao-principal .infos p {
+    line-height: 24px;
+}
+
+.secao-principal .infos a {
+    margin-top: 36px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(36, 100%, 99%);
+    background-color: var(--button-color);
+    width: 18.5rem;
+    height: 48px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-size: 13px;
+    transition: 0.3s ease-in-out ;
+}
+
+.secao-principal .infos a:hover {
+    background-color: var(--aside-bc-color);
+}
+
+.container .aside .aside-container {
+    height: 51rem;
+    background-color: var(--aside-bc-color);
+    padding: 28px 35px 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.container .aside .aside-container h2 {
+    font-size: 40px;
+    color: var(--new-color);
+}
+
+.container .aside .aside-container .aside-link {
+    color: var(--text-aside-color);
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    transition: 0.3s ease-in-out ;
+}
+
+.container .aside .aside-container .aside-link:hover {
+    color: var(--new-color);
+}
+
+.container .aside .aside-container p {
+    line-height: 25px;
+    border-bottom: 1px solid var(--text-principal-color);
+    color: var(--text-principal-color);
+    height: 7.9rem;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.container .aside .aside-container .last-child {
+    border-bottom: none;
+}
+
+.container .footer .container-footer {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    line-height: 25px;
+
+}
+
+.container .footer .container-footer img {
+    width: 100px;
+}
+
+.container .footer .container-footer .infos-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container .footer .container-footer .infos-footer h2 {
+    font-size: 30px;
+    color: rgb(200, 197, 205);
+    font-weight: 700;
+}
+
+.container .infos-footer .link-footer {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--aside-bc-color);
+    transition: 0.3s ease-in-out ;
+}
+
+.container .infos-footer .link-footer:hover {
+    color: var(--button-color);
+}

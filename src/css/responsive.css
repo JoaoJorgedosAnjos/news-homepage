@@ -1,0 +1,80 @@
+
+@media(max-width:1125px){
+    .container{
+        grid-template-areas: "header header"
+        "secao-principal secao-principal"
+        "aside footer";
+        margin-left: 50px;
+        width: 100vw;
+        
+    }
+    .container .cabecalho{
+        max-width: 73rem;
+    }
+    .container .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+        margin-top: 0;
+        margin-right: 200px;
+    
+    }
+     .container .footer .container-footer {
+        width: 300px;    
+    } 
+}
+@media(max-width:998px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .container .secao-principal .info,
+    .container .secao-principal .info .infos,
+    .container .secao-principal .info .titulo{
+        width: 350px;
+    }
+    .container .cabecalho{
+        margin-bottom: 50px;
+    }
+    .container .secao-principal{
+        height: 150rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+    }
+    .container .secao-principal .info{
+        display: flex;
+        flex-direction: column;
+        height: 40rem;
+    }
+        
+    .container .footer{
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:800px) {
+    .container .secao-principal picture img{
+        width: 350px;
+    }
+   
+    .container{
+        justify-content: center;
+        align-items: center;
+        width: 35rem;
+        height: 180rem;
+        margin: 50px 0 0 0;
+    }
+    .container .cabecalho{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .container .footer{
+        margin:30px;
+    }
+}
